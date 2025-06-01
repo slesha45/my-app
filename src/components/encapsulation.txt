@@ -1,0 +1,20 @@
+class Lion {
+    constructor(name, hairColor) {
+        //"this" keyword creates a special object that we can use to represent any instance of the class.
+        this.name = name;
+        this.hairColor = hairColor;
+    }
+
+    logName() {
+        console.log("Roar! I'm", this.name);
+    }
+}
+
+const goldenLion = new Lion("Mufasa", "Golden");
+const redLion = new Lion("Scar", "Red");
+
+console.log(goldenLion);
+console.log(redLion);
+
+goldenLion.logName();
+redLion.logName();
